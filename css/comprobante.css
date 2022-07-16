@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menu{
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.menu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Comic Sans Ms';
+}
+
+.menu a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+
+.menu a.active{
+    background-color: #4caf50;
+    color: white;
+}
+
+
+.menu .icon {
+    display: none;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    margin: auto;
+    gap: 10px;
+}
+
+.primera{
+    margin-top: 20px;
+}
+
+.titulo{
+    color: white;
+    margin-bottom: 0;
+}
+
+.texto{
+    width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+    height: 38px;
+	border-radius: 3px;/*centrado */
+	transition: .3s ease all;
+    padding: 10px;
+    color: black;
+}
+.grupo{
+    grid-column: span 2;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 200px 300px 70px 200px 200px;
+    gap: 10px;
+}
+.derecha{
+    text-align: right;
+}
+.boton{
+    grid-column: span 2;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
